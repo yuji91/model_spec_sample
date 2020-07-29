@@ -2,8 +2,8 @@
 
 このアプリケーションでは、タイトルや説明文、ステータスや期限などのタスク情報を登録できます。
 
-また、タスクにはタイトルと期限についての必須入力と、期限が翌日以降であることのバリデーションが設定されています。
-[![Image from Gyazo](https://t.gyazo.com/teams/diveintocode/fc9cea647a348404073b767021bdfc39.gif)](https://diveintocode.gyazo.com/fc9cea647a348404073b767021bdfc39)
+タスクにはタイトルと期限の必須入力と、期限が今日以降であることのバリデーションがあります。
+[![Image from Gyazo](https://t.gyazo.com/teams/diveintocode/844628817228920f718b1e9963fe671e.gif)](https://diveintocode.gyazo.com/844628817228920f718b1e9963fe671e)
 
 ## 環境構築用コマンド
 ```bash
