@@ -19,7 +19,7 @@ RSpec.describe "Tasks", type: :system do
       context "期限に今日の日付を設定した場合" do
         it "タスクの作成に成功する" do
           visit new_task_path
-          fill_in "Title", with: "hoge"
+          fill_in "Title", with: nil
           fill_in  "Deadline", with: Date.today
           click_on "Create Task"
           expect(page).to have_text("Task was successfully created.")
