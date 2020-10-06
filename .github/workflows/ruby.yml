@@ -29,8 +29,8 @@ jobs:
         ruby-version: 2.6.5
     - name: Install and Compile Javascript with webpacker 
       run: |
-        rails webpacker:install
-        rails webpacker:compile
+        bundle exec rails webpacker:install
+        bundle exec rails webpacker:compile
     - name: Install dependencies
       run: bundle install
     - name: Run tests
