@@ -31,6 +31,7 @@ jobs:
       run: bundle install
     - name: Install and Compile Javascript with webpacker 
       run: |
+        yarn install --check-files
         bundle exec rails webpacker:install
         bundle exec rails webpacker:compile
     - name: Run tests
