@@ -34,5 +34,10 @@ jobs:
         sudo apt-get install postgresql libpq-dev
         sudo service postgresql start
         sudo -u postgres createuser --superuser "$USER"
+    - name: Install and Compile Javascript with webpacker 
+      run: |
+        yarn install --check-files
+        bundle exec rails webpacker:install
+        bundle exec rails webpacker:compile
     - name: Run tests
       run: bundle exec rake
