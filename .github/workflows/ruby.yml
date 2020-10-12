@@ -39,5 +39,9 @@ jobs:
         yarn install --check-files
         bundle exec rails webpacker:install
         bundle exec rails webpacker:compile
+    - name: Set up Rails
+      run: script/setup
+      env:
+        RAILS_ENV: test
     - name: Run tests
       run: bundle exec rake
